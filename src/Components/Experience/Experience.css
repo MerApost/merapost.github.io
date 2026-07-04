@@ -1,0 +1,22 @@
+.experience-section { background-color: var(--cream); }
+
+.split-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.experience-list { display: grid; gap: 18px; }
+
+.experience-card { padding: 32px; }
+
+.experience-card h3 { margin: 0 0 12px; font-size: 1.5rem; }
+
+.experience-card strong { color: var(--accent); }
+
+.experience-card p { color: var(--muted); line-height: 1.75; }
+
+@media (max-width: 900px) {
+  .split-section { grid-template-columns: 1fr; }
+}

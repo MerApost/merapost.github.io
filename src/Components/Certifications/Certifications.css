@@ -1,0 +1,16 @@
+.certifications-section { background: var(--cream-2); }
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.cert-card { padding: 30px; }
+
+.cert-card span { color: var(--accent); font-weight: 900; }
+
+.cert-card h3 { margin: 12px 0 8px; }
+
+.cert-card p { color: var(--muted); }

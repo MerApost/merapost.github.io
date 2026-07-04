@@ -1,0 +1,54 @@
+.education-section {
+  background:
+    radial-gradient(circle at top right, rgba(201,147,85,0.17), transparent 36%),
+    var(--cream-2);
+}
+
+.timeline {
+  position: relative;
+  margin-top: 48px;
+  display: grid;
+  gap: 28px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(var(--accent), rgba(201,147,85,0));
+}
+
+.timeline-item { position: relative; padding-left: 54px; }
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 8px solid var(--cream-2);
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.timeline-card { padding: 32px; }
+
+.timeline-card span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+.timeline-card h3 { margin: 0; font-size: clamp(1.4rem, 2vw, 2rem); }
+
+.timeline-card .place { color: var(--ink); font-weight: 800; }
+
+.timeline-card p { color: var(--muted); line-height: 1.75; }

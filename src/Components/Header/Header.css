@@ -1,0 +1,115 @@
+.site-header {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: min(1000px, calc(100vw - 80px));
+  height: 68px;
+  padding: 0 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 3px;
+  background: rgba(48, 43, 39, 0.58);
+  box-shadow: 0 16px 45px rgba(20, 10, 3, 0.24);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.floating-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-nav a {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 27px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+
+.floating-nav a:hover,
+.floating-nav a:focus,
+.floating-nav a.active {
+  color: var(--ink);
+  background: white;
+}
+
+.header-socials {
+  position: absolute;
+  right: 28px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-socials a {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 24px;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.header-socials svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.header-socials svg rect,
+.header-socials svg circle:not(.fill-dot) { fill: none; }
+
+.header-socials .fill-dot { stroke: none; }
+
+.social-text.linkedin {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.header-socials a:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  .site-header {
+    bottom: 14px;
+    width: calc(100vw - 28px);
+    height: 60px;
+    padding: 0;
+    justify-content: flex-start;
+    border-radius: 3px;
+  }
+  .header-socials { display: none; }
+  .floating-nav {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .floating-nav::-webkit-scrollbar { display: none; }
+  .floating-nav a {
+    flex: 0 0 auto;
+    padding: 0 20px;
+    font-size: 0.64rem;
+  }
+}
