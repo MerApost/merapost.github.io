@@ -73,6 +73,14 @@
   stroke-width: 1.8;
 }
 
+.header-socials .github-icon,
+.header-socials .brand-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  stroke: none;
+}
+
 .header-socials svg rect,
 .header-socials svg circle:not(.fill-dot) { fill: none; }
 
