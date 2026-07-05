@@ -34,6 +34,10 @@ function Contact({ profile }) {
             </a>
           ))}
         </div>
+
+        <p className="contact-copyright">
+          © 2026 Meropi Apostolaki. All rights reserved.
+        </p>
       </div>
     </section>
   );

@@ -32,7 +32,8 @@ function App() {
       ".cert-card",
       ".language-card",
       ".contact-actions",
-      ".contact-socials"
+      ".contact-socials",
+      ".contact-copyright"
     ].join(",");
 
     const revealItems = [];
