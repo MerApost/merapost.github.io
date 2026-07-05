@@ -22,8 +22,10 @@ function App() {
         <Education data={profile.education} />
         <Skills data={profile.skills} />
         <Projects data={profile.projects} />
-        <Experience data={profile.experience} />
-        <Certifications data={profile.certifications} />
+        {profile.experience?.length > 0 && <Experience data={profile.experience} />}
+        {profile.certifications?.length > 0 && (
+          <Certifications data={profile.certifications} />
+        )}
         <Languages data={profile.languages} />
         <Contact profile={profile} />
       </main>

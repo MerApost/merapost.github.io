@@ -1,7 +1,6 @@
 export const profile = {
   name: "Meropi Apostolaki",
-  role: "Computer Science Student",
-  tagline: "Software Developer & UX/UI Enthusiast",
+  role: "Software Developer & UX/UI Designer",
   email: "meropi.apostolaki@gmail.com",
   location: "Athens, Greece",
   navItems: [
@@ -13,14 +12,14 @@ export const profile = {
   ],
   socials: [
     { label: "GitHub", url: "https://github.com/MerApost", short: "GH" },
-    { label: "LinkedIn", url: "#", short: "in" },
-    { label: "Instagram", url: "#", short: "IG" }
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/meropi-apostolaki-411739277", short: "in" },
+    { label: "Instagram", url: "https://www.instagram.com/meropi_apostolaki", short: "IG" }
   ],
   about: {
     eyebrow: "About me",
-    title: "I build clean, practical and user-friendly digital experiences.",
+    title: "Hello! Υou want to get to know me better;",
     text:
-      "I am a Computer Science student at the National and Kapodistrian University of Athens, interested in software development, frontend engineering and UX/UI design. I enjoy creating projects that combine functionality, structure and a polished user experience.",
+      "I am a Computer Science student at the National and Kapodistrian University of Athens and I am interested in software development, frontend engineering and UX/UI design. I like to create projects that combine functionality, structure and a thoughtful user experience. When I am not at the computer, I like to travel the world, exploring new flavors, cultures and people. I also love fashion, music and movies",
     cards: [
       { number: "CS", label: "Academic background" },
       { number: "UI", label: "Design-oriented mindset" },
@@ -29,21 +28,21 @@ export const profile = {
   },
   education: [
     {
-      years: "2022 — Present",
+      years: "2022 — 2027",
       title: "BSc in Informatics & Telecommunications",
       place: "National and Kapodistrian University of Athens",
       details:
-        "Core studies in programming, algorithms, software engineering, operating systems, databases, compilers and human-computer interaction."
+        "Knowledge from my studies in programming, algorithms, software engineering, operating systems, databases, compilers and human-computer interaction, mathematics, computer architecture, networks, signals.I also have a certificate of pedagogical competence.Therefore, I am able to train other people and organize presentations or educational seminars successfully and cope with various challenges."
     }
   ],
   skills: [
-    { category: "Programming", items: ["C", "C++", "Java", "Python", "SQL"] },
+    { category: "Programming", items: ["C", "C++", "Java", "Python", "SQL", "Assembly", "Bash", "MATLAB"] },
     { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Responsive UI"] },
-    { category: "Tools & Concepts", items: ["Git", "GitHub", "Linux", "Compilers", "UX/UI"] }
+    { category: "Tools & Concepts", items: ["Git", "GitHub", "Linux", "Compilers", "UX/UI", "MySQL", "Figma", "LaTeX", "VS Code"] }
   ],
   projects: [
     {
-      title: "PawHealth Portal",
+      title: "PetHealth",
       type: "Human-Computer Interaction Project",
       description:
         "A React frontend platform for pet health records, veterinary appointments and lost/found pet reports, designed around clear user flows and accessible UI.",
@@ -67,19 +66,19 @@ export const profile = {
       links: [{ label: "GitHub", url: "#" }]
     }
   ],
-  experience: [
+  /*experience: [
     {
       title: "Academic & Personal Software Projects",
       place: "University and self-directed work",
       details:
         "Development of structured academic projects with emphasis on clean code organization, documentation and user-facing presentation."
     }
-  ],
-  certifications: [
+  ],*/
+  /*certifications: [
     { title: "Add your certification here", issuer: "Provider / University / Platform", year: "2026" }
-  ],
+  ],*/
   languages: [
-    { name: "Greek", level: "Native" },
-    { name: "English", level: "Professional working proficiency" }
+    { name: "Greek", level: "" },
+    { name: "English", level: "" }
   ]
 };

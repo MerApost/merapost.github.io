@@ -29,7 +29,7 @@
 }
 
 .hero-content {
-  --hero-shift: 10vh;
+  --hero-shift: 6vh;
   position: relative;
   z-index: 1;
   width: min(1100px, 100%);

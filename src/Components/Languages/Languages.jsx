@@ -13,7 +13,7 @@ function Languages({ data }) {
           {data.map((language) => (
             <article className="language-card card" key={language.name}>
               <h3>{language.name}</h3>
-              <p>{language.level}</p>
+              {language.level && <p>{language.level}</p>}
             </article>
           ))}
         </div>

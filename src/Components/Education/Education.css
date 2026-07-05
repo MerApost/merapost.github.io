@@ -1,7 +1,7 @@
 .education-section {
   background:
-    radial-gradient(circle at top right, rgba(201,147,85,0.17), transparent 36%),
-    var(--cream-2);
+    radial-gradient(circle at top right, var(--accent-soft), transparent 34%),
+    var(--cream);
 }
 
 .timeline {
@@ -35,7 +35,12 @@
   box-shadow: 0 0 0 1px var(--line);
 }
 
-.timeline-card { padding: 32px; }
+.timeline-card {
+  padding: clamp(26px, 4vw, 38px);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.timeline-card:hover { transform: translateX(4px); border-color: var(--line-strong); }
 
 .timeline-card span {
   display: inline-flex;
@@ -51,4 +56,10 @@
 
 .timeline-card .place { color: var(--ink); font-weight: 800; }
 
-.timeline-card p { color: var(--muted); line-height: 1.75; }
+.timeline-card p { color: var(--muted); line-height: 1.78; }
+
+@media (max-width: 620px) {
+  .timeline-item { padding-left: 34px; }
+  .timeline::before { left: 7px; }
+  .timeline-dot { left: -6px; }
+}

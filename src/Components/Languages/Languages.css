@@ -1,9 +1,13 @@
-.languages-section { background: var(--cream); }
+.languages-section {
+  background:
+    radial-gradient(circle at 12% 90%, var(--accent-soft), transparent 30%),
+    var(--cream-2);
+}
 
 .language-shell {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 48px;
+  gap: clamp(42px, 7vw, 74px);
   align-items: center;
 }
 
@@ -13,7 +17,16 @@
   gap: 18px;
 }
 
-.language-card { padding: 32px; }
+.language-card {
+  min-height: 132px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.language-card:hover { transform: translateY(-3px); border-color: var(--line-strong); }
 
 .language-card h3 { margin: 0 0 8px; font-size: 1.6rem; }
 
