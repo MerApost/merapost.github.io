@@ -66,6 +66,10 @@
   background: white;
 }
 
+.contact-main:hover span {
+  color: var(--ink);
+}
+
 .contact-actions span { color: rgba(255, 255, 255, 0.78); }
 
 .contact-socials {
