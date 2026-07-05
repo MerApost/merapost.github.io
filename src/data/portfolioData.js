@@ -17,9 +17,9 @@ export const profile = {
   ],
   about: {
     eyebrow: "About me",
-    title: "Hello! Υou want to get to know me better;",
+    title: "Hello! You want to get to know me better;",
     text:
-      "I am a Computer Science student at the National and Kapodistrian University of Athens and I am interested in software development, frontend engineering and UX/UI design. I like to create projects that combine functionality, structure and a thoughtful user experience. When I am not at the computer, I like to travel the world, exploring new flavors, cultures and people. I also love fashion, music and movies",
+      "I am a Computer Science student at the National and Kapodistrian University of Athens, with an interest in software development, frontend engineering and UX/UI design. I enjoy creating projects that combine functionality, clean structure and thoughtful user experience. Outside of tech, I love traveling, exploring new cultures, trying new flavors, and finding inspiration in fashion, music and movies.",
     cards: [
       { number: "CS", label: "Academic background" },
       { number: "UI", label: "Design-oriented mindset" },
@@ -32,13 +32,13 @@ export const profile = {
       title: "BSc in Informatics & Telecommunications",
       place: "National and Kapodistrian University of Athens",
       details:
-        "Knowledge from my studies in programming, algorithms, software engineering, operating systems, databases, compilers and human-computer interaction, mathematics, computer architecture, networks, signals.I also have a certificate of pedagogical competence.Therefore, I am able to train other people and organize presentations or educational seminars successfully and cope with various challenges."
+        "My studies have provided me with knowledge in programming, algorithms, software engineering, operating systems, databases, compilers, human-computer interaction, mathematics, computer architecture, networks and signals. I also hold a certificate of pedagogical competence, which has helped me develop communication, presentation and educational skills."
     }
   ],
   skills: [
-    { category: "Programming", items: ["C", "C++", "Java", "Python", "SQL", "Assembly", "Bash", "MATLAB"] },
+    { category: "Programming", items: ["C", "C++", "Java", "Python", "SQL", "Assembly", "Bash"] },
     { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Responsive UI"] },
-    { category: "Tools & Concepts", items: ["Git", "GitHub", "Linux", "Compilers", "UX/UI", "MySQL", "Figma", "LaTeX", "VS Code"] }
+    { category: "Tools & Concepts", items: ["Git", "GitHub", "Linux", "UX/UI", "MySQL", "Figma", "LaTeX", "VS Code", "MATLAB"] }
   ],
   projects: [
     {
@@ -47,7 +47,9 @@ export const profile = {
       description:
         "A React frontend platform for pet health records, veterinary appointments and lost/found pet reports, designed around clear user flows and accessible UI.",
       stack: ["React", "CSS", "JSON Server", "UX/UI"],
-      links: [{ label: "GitHub", url: "#" }, { label: "Demo", url: "#" }]
+      links: [
+        { label: "GitHub", url: "https://github.com/MerApost/Website-PetHealth" }
+      ]
     },
     {
       title: "Compiler Construction Projects",
@@ -58,12 +60,17 @@ export const profile = {
       links: [{ label: "GitHub", url: "https://github.com/MerApost/Compilers" }]
     },
     {
-      title: "Personal Portfolio",
-      type: "Frontend Website",
+      title: "Software Systems Analysis & Design",
+      type: "Academic Systems Design Project",
       description:
-        "A responsive portfolio website with a cinematic hero section, animated graphics, smooth scrolling and modular React components.",
-      stack: ["React", "CSS", "GitHub Pages"],
-      links: [{ label: "GitHub", url: "#" }]
+        "Analysis and design of a digital collaboration platform through requirements modeling, UML diagrams, data-flow diagrams, design patterns and a structured decision table.",
+      stack: ["UML", "DFD", "Design Patterns", "StarUML"],
+      links: [
+        {
+          label: "GitHub",
+          url: "https://github.com/MerApost/Analysis-and-Design-of-Sotware-Systems-Course"
+        }
+      ]
     }
   ],
   /*experience: [

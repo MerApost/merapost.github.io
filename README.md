@@ -1,50 +1,76 @@
-# Meropi Apostolaki — Personal Portfolio Prototype
+# Meropi Apostolaki — Personal Portfolio
 
-A responsive personal portfolio website built with **React**, inspired by a cinematic full-screen hero layout with smooth scrolling sections.
+A responsive personal portfolio built with React. It presents my background, technical skills, selected projects, languages, and contact information through a clean, motion-focused interface.
 
-## Sections
+## Open online
 
-- Hero
-- About
-- Education
-- Skills
-- Projects
-- Experience
-- Certifications
-- Languages
-- Contact
+No download or installation is required:
+
+### [Open the portfolio →](https://merapost.github.io)
+
+## Features
+
+- Full-screen photographic hero section
+- Responsive layouts for desktop, tablet, and mobile
+- Scroll-triggered text and card animations
+- About, education, skills, projects, languages, and contact sections
+- Optional experience and certification sections
+- Accessible links, focus states, and reduced-motion support
+- Centralized portfolio content for straightforward updates
+- Automatic deployment to GitHub Pages
+
+## Built with
+
+- React 18
+- JavaScript
+- CSS3
+- Intersection Observer API
+- GitHub Actions
+- GitHub Pages
 
 ## Run locally
+
+Requirements: Node.js 20 or a compatible recent LTS release.
+
+If the project is already available on your computer, open a terminal inside its folder and run:
 
 ```bash
 npm install
 npm start
 ```
 
-## Build
+The development server runs at [http://localhost:3000](http://localhost:3000).
+
+To download the project from GitHub for the first time:
 
 ```bash
-npm run build
+git clone https://github.com/MerApost/merapost.github.io.git
+cd merapost.github.io
 ```
 
-## GitHub Pages
+## Available scripts
 
-This project includes:
+```bash
+npm start       # Start the development server
+npm run build   # Create an optimized production build
+npm test        # Run the test runner
+```
+
+## Project structure
 
 ```text
-.github/workflows/deploy.yml
+src/
+├── Components/          # Section components and their styles
+├── data/
+│   └── portfolioData.js # Portfolio text, projects, links, and skills
+├── App.js               # Page composition and scroll animations
+├── App.css              # Shared styles and design tokens
+└── index.js             # React entry point
+
+public/
+├── portfolio.jpg        # Hero and page background image
+├── portfolio2.ico       # Site icon
+├── index.html
+└── manifest.json
 ```
 
-After pushing to `main`, go to **Settings → Pages** and choose **GitHub Actions** as source.
-
-## Replace images later
-
-Replace:
-
-```text
-public/portfolio.jpg
-public/portfolio.webp
-public/portfolio2.ico
-```
-
-The hero section currently uses `public/portfolio.webp`.
