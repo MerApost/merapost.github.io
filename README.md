@@ -73,4 +73,3 @@ public/
 ├── index.html
 └── manifest.json
 ```
-
